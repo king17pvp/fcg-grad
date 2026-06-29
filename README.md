@@ -4,6 +4,31 @@ Token-level attribution method for Transformer models. FCGGrad replaces step-wis
 
 Supports **sentiment classification** (DistilBERT, BERT, RoBERTa on SST-2, IMDB, Rotten Tomatoes) and **extractive QA** (SQuAD).
 
+## Setup
+
+**Requirements:** Python 3.12, CUDA-compatible GPU (or CPU-only with `torch` CPU build).
+
+### Option A: Conda (recommended)
+
+```bash
+conda env create -f environment.yml
+conda activate fcg_gradient_env
+```
+
+### Option B: pip + venv
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Verify
+
+```bash
+python -c "import torch; import transformers; import captum; print('torch', torch.__version__, '| CUDA', torch.cuda.is_available())"
+```
+
 ## Quick start
 
 ```bash

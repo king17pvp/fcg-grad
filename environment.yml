@@ -1,0 +1,40 @@
+name: fcg_gradient_env
+channels:
+  - defaults
+  - pytorch
+  - huggingface
+dependencies:
+  - python=3.12
+  - pip
+  - setuptools
+  - wheel
+  - pip:
+      - torch==2.10.0
+      - transformers==4.56.2
+      - datasets==4.1.1
+      - captum==0.8.0
+      - matplotlib==3.10.8
+      - numpy==1.26.4
+      - tqdm==4.67.3
+      - scikit-learn==1.7.2
+      - scipy==1.17.0
+      - pandas==3.0.0
+      - tokenizers==0.22.2
+      - safetensors==0.7.0
+      - huggingface-hub==0.36.2
+      - dill==0.4.0
+      - multiprocess==0.70.16
+      - xxhash==3.6.0
+      - pyyaml==6.0.3
+      - requests==2.32.5
+      - sympy==1.14.0
+      - networkx==3.6.1
+      - filelock==3.20.3
+      - fsspec==2025.9.0
+      - jinja2==3.1.6
+      - regex==2026.1.15
+      - packaging==25.0
+      - typing-extensions==4.15.0
+      - aiohttp==3.13.3
+      - pillow==12.1.0
+      - slalom-explanations==0.1.2
