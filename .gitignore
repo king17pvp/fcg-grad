@@ -1,6 +1,8 @@
 __pycache__/
 logs/
 figures/
+visualizations/
+visualizations_qa/
 *.pyc
 *.pyo
 .DS_Store
